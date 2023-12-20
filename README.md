@@ -1,16 +1,54 @@
-# machine_learning_project-supervised-learning
+# Supervised Learning Project: Predicting Diabetes
 
 ## Project Outcomes
-- Supervised Learning: use supervised learning techniques to build a machine learning model that can predict whether a patient has diabetes or not, based on certain diagnostic measurements.The project involves three main parts: exploratory data analysis, preprocessing and feature engineering, and training a machine learning model. 
-### Duration:
-Approximately 3 hours and 20 minutes.
-### Project Description:
-In this projects, you will apply supervised learning techniques to a real-world data set and use data visualization tools to communicate the insights gained from the analysis.
 
-The data set for this project is the "Diabetes" dataset from the National Institute of Diabetes and Digestive and Kidney Diseases 
-The project will involve the following tasks:
+### Goal
 
--	Exploratory data analysis and pre-processing: We will import and clean the data sets, analyze and visualize the relationships between the different variables, handle missing values and outliers, and perform feature engineering as needed.
--	Supervised learning: We will use the Diabetes dataset to build a machine learning model that can predict whether a patient has diabetes or not, using appropriate evaluation metrics such as accuracy, precision, recall, F1-score, and ROC-AUC. We will select at least two models, including one ensemble model, and compare their performance.
+- Utilize supervised learning techniques to predict whether a patient has diabetes based on diagnostic measurements.
+- Enhance skills in exploratory data analysis, data preprocessing, and model evaluation using various machine learning algorithms.
 
-The ultimate goal of the project is to gain insights from the data sets and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on the business questions asked."
+### Duration
+
+- Originally estimated: Approximately 3 hours and 20 minutes.
+- Actual completion time: Closer to 16 hours.
+
+### Project Description
+
+- Applied supervised learning on the "Diabetes" dataset from the National Institute of Diabetes and Digestive and Kidney Diseases.
+- Tasks included exploratory data analysis, data cleaning, handling missing values, feature engineering, and building predictive models.
+
+### Conclusions
+
+#### Discussion of Results for the Training Section
+
+- Results from the Training of 3 Models:
+
+| Model                      | Cross-Validation | Hyper Parameters | Best Model Measure | Training Recall | Test Recall | Test F1 Score |
+|----------------------------|------------------|------------------|--------------------|-----------------|-------------|---------------|
+| Logistic Regression        | None             | N/A              | N/A                | N/A             | 0.67        | 0.66          |
+| Logistic Regression        | K-Folds (10 folds)| -                | Recall             | 0.643           | 0.6         | 0.706         |
+| Random Forest              | K-Folds (5 folds) | GridSearch       | Recall             | 0.588           | 0.667       | 0.727         |
+| Random Forest              | K-Folds (10 folds)| RandomizedSearch | Recall             | 0.576           | 0.6         | 0.679         |
+
+#### Reflections on the Model Training Measures
+
+- Findings from Model Training:
+  - The basic Logistic Regression without cross-validation performed best on Test data using Recall score.
+  - Random Forest with GridSearch exhibited promising results, especially in F1 score, which is a blend of Recall and Precision.
+  - The Random Forest model's performance was close to Logistic Regression on Recall, despite additional efforts in hyperparameter tuning.
+
+#### Overall Conclusions
+
+- The plain Logistic Regression model performed unexpectedly well on Recall for Test data compared to models involving Cross-Validation and Hyperparameter Tuning.
+- The Random Forest with Grid Search shows promise but may improve with:
+  - More computational resources and hyperparameter tuning.
+  - Experimentation with different performance metrics.
+  - Implementation of feature selection methodologies and oversampling techniques.
+
+### Next Steps
+
+- Areas for further exploration and learning include:
+  - Understanding statistical tests for feature relations.
+  - Employing feature selection methodologies and handling missing data and outliers.
+  - Exploring oversampling techniques for potential model improvement.
+  - Researching computational resources and optimization techniques for hyperparameter tuning.
