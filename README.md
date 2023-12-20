@@ -9,7 +9,7 @@
 
 ### Project Description
 
-Applied supervised learning on the ["Diabetes" dataset](https://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset) from the National Institute of Diabetes and Digestive and Kidney Diseases.
+- Applied supervised learning on the ["Diabetes" dataset](https://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset) from the National Institute of Diabetes and Digestive and Kidney Diseases.
 - Tasks included exploratory data analysis, data cleaning, handling missing values, feature engineering, and building predictive models.
 
 ### Conclusions
