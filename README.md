@@ -5,6 +5,8 @@
 ### Goal 🌟
 - Utilize supervised learning techniques to predict whether a patient has diabetes based on diagnostic measurements. 🔍
 - Enhance skills in exploratory data analysis, data preprocessing, and model evaluation using various machine learning algorithms. 📊
+- ![Diabetes Analysis](https://media.giphy.com/media/lnlvaqJEhQtwMpkUzc/giphy.gif)
+
 
 ### Project Description 📝
 - Applied supervised learning on the [Diabetes dataset](https://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset) from the National Institute of Diabetes and Digestive and Kidney Diseases.
